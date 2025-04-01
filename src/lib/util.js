@@ -146,21 +146,42 @@ export function calculateXpReward(playerXp, enemyXp) {
 	const enemyLevel = getPlayerLevel(enemyXp);
 	const playerLevel = getPlayerLevel(playerXp);
 
+	// Basic validation or handling for edge cases might be needed
+	if (enemyLevel <= 0 || playerLevel <= 0) {
+		console.warn(`Invalid level calculated: Player ${playerLevel}, Enemy ${enemyLevel}`);
+		return 1; // Or handle error appropriately
+	}
+
 	let baseReward =
 		GameInfo.constants.enemyBaseXpReward + enemyLevel * GameInfo.constants.enemyXpRewardPerLevel;
+
+	// Ensure base reward is at least 1 before modification
+	baseReward = Math.max(1, baseReward);
 
 	const levelDiff = enemyLevel - playerLevel;
 	let modifier = 1.0;
 
+	// --- Tunable Parameters ---
+	const bonusFactor = 0.15; // Bonus per level enemy is higher
+	const penaltyFactor = 0.05; // Penalty per level player is higher (reduced from 0.25)
+	const minModifier = 0.1; // Minimum XP modifier (e.g., 5% of base reward)
+	// --- End Tunable Parameters ---
+
 	if (levelDiff > 0) {
 		// If enemy is higher, you get bonus XP
-		modifier += levelDiff * 0.15;
+		modifier += levelDiff * bonusFactor;
 	} else if (levelDiff < 0) {
-		// If enemy is lower level, you get less XP
-		modifier += levelDiff * 0.25;
+		// If enemy is lower level, calculate penalty
+		// levelDiff is negative, so this subtracts from 1.0
+		const calculatedModifier = 1.0 + levelDiff * penaltyFactor;
+
+		// Ensure the modifier doesn't drop below the minimum threshold
+		modifier = Math.max(minModifier, calculatedModifier);
 	}
+	// Else (levelDiff == 0), modifier remains 1.0
 
-	const finalReward = Math.round(baseReward * modifier);
+	// Calculate final reward, ensuring it's at least 1
+	const finalReward = Math.max(1, Math.round(baseReward * modifier));
 
-	return Math.max(1, finalReward);
+	return finalReward;
 }
