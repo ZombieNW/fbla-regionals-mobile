@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">CalcBattles</string>
+    <string name="title_activity_main">CalcBattles</string>
+    <string name="package_name">com.zombienw.calcbattles</string>
+    <string name="custom_url_scheme">com.zombienw.calcbattles</string>
+</resources>

@@ -1,0 +1,422 @@
+[
+	{
+		"question": "Factor Polynomial",
+		"equation": "x^2 - 9",
+		"answers": [
+			{ "text": "(x-3)(x+3)", "correct": true },
+			{ "text": "(x-9)(x+1)", "correct": false },
+			{ "text": "(x-3)^2", "correct": false },
+			{ "text": "Cannot be factored", "correct": false }
+		]
+	},
+	{
+		"question": "Evaluate Integral",
+		"equation": "∫ tan(x) dx",
+		"answers": [
+			{ "text": "-ln|cos(x)| + C", "correct": true },
+			{ "text": "ln|sin(x)| + C", "correct": false },
+			{ "text": "sec^2(x) + C", "correct": false },
+			{ "text": "ln|sec(x) + tan(x)| + C", "correct": false }
+		]
+	},
+	{
+		"question": "Solve Log Equation",
+		"equation": "log_3(x) = 2",
+		"answers": [
+			{ "text": "x = 9", "correct": true },
+			{ "text": "x = 6", "correct": false },
+			{ "text": "x = 8", "correct": false },
+			{ "text": "x = 2/3", "correct": false }
+		]
+	},
+	{
+		"question": "Find Derivative",
+		"equation": "f(x) = arctan(x)",
+		"answers": [
+			{ "text": "f'(x) = 1 / (1 + x^2)", "correct": true },
+			{ "text": "f'(x) = 1 / (√(1 - x^2))", "correct": false },
+			{ "text": "f'(x) = -1 / (1 + x^2)", "correct": false },
+			{ "text": "f'(x) = sec^2(x)", "correct": false }
+		]
+	},
+	{
+		"question": "Evaluate Integral",
+		"equation": "∫ sec^2(x) dx",
+		"answers": [
+			{ "text": "tan(x) + C", "correct": true },
+			{ "text": "sec(x) tan(x) + C", "correct": false },
+			{ "text": "ln|sec(x)| + C", "correct": false },
+			{ "text": "sec(x) + C", "correct": false }
+		]
+	},
+	{
+		"question": "Trig Value",
+		"equation": "sin(π/6)",
+		"answers": [
+			{ "text": "1/2", "correct": true },
+			{ "text": "(√3)/2", "correct": false },
+			{ "text": "(√2)/2", "correct": false },
+			{ "text": "1", "correct": false }
+		]
+	},
+	{
+		"question": "Trig Value",
+		"equation": "cos(0)",
+		"answers": [
+			{ "text": "1", "correct": true },
+			{ "text": "0", "correct": false },
+			{ "text": "-1", "correct": false },
+			{ "text": "π/2", "correct": false }
+		]
+	},
+	{
+		"question": "Simplify Trig ID",
+		"equation": "sin^2(θ) + cos^2(θ)",
+		"answers": [
+			{ "text": "1", "correct": true },
+			{ "text": "0", "correct": false },
+			{ "text": "tan^2(θ)", "correct": false },
+			{ "text": "sin(2θ)", "correct": false }
+		]
+	},
+	{
+		"question": "Trig Value",
+		"equation": "tan(π/4)",
+		"answers": [
+			{ "text": "1", "correct": true },
+			{ "text": "0", "correct": false },
+			{ "text": "√3", "correct": false },
+			{ "text": "Undefined", "correct": false }
+		]
+	},
+	{
+		"question": "Solve for x",
+		"equation": "2x + 5 = 11",
+		"answers": [
+			{ "text": "x = 3", "correct": true },
+			{ "text": "x = 8", "correct": false },
+			{ "text": "x = 6", "correct": false },
+			{ "text": "x = 5.5", "correct": false }
+		]
+	},
+	{
+		"question": "Evaluate Logarithm",
+		"equation": "log_2(8)",
+		"answers": [
+			{ "text": "3", "correct": true },
+			{ "text": "4", "correct": false },
+			{ "text": "16", "correct": false },
+			{ "text": "2", "correct": false }
+		]
+	},
+	{
+		"question": "Expand Expression",
+		"equation": "(x+3)^2",
+		"answers": [
+			{ "text": "x^2 + 6x + 9", "correct": true },
+			{ "text": "x^2 + 9", "correct": false },
+			{ "text": "x^2 + 3x + 9", "correct": false },
+			{ "text": "2x + 6", "correct": false }
+		]
+	},
+	{
+		"question": "Evaluate Integral",
+		"equation": "∫ e^{5x} dx",
+		"answers": [
+			{ "text": "(1/5)e^{5x} + C", "correct": true },
+			{ "text": "5e^{5x} + C", "correct": false },
+			{ "text": "e^{5x} + C", "correct": false },
+			{ "text": "(e^{5x+1}) / (5x+1) + C", "correct": false }
+		]
+	},
+	{
+		"question": "Find Derivative",
+		"equation": "f(x) = tan(x)",
+		"answers": [
+			{ "text": "f'(x) = sec^2(x)", "correct": true },
+			{ "text": "f'(x) = cot(x)", "correct": false },
+			{ "text": "f'(x) = sec(x) tan(x)", "correct": false },
+			{ "text": "f'(x) = -csc^2(x)", "correct": false }
+		]
+	},
+	{
+		"question": "Evaluate Integral",
+		"equation": "∫ sin(2x) dx",
+		"answers": [
+			{ "text": "-(1/2)cos(2x) + C", "correct": true },
+			{ "text": "(1/2)cos(2x) + C", "correct": false },
+			{ "text": "-2cos(2x) + C", "correct": false },
+			{ "text": "-cos(2x) + C", "correct": false }
+		]
+	},
+	{
+		"question": "Find Derivative",
+		"equation": "f(x) = x^3 + 5x^2 - 7x + 4",
+		"answers": [
+			{ "text": "f'(x) = 3x^2 + 10x - 7", "correct": true },
+			{ "text": "f'(x) = 3x^3 + 10x^2 - 7x", "correct": false },
+			{ "text": "f'(x) = x^2 + 5x - 7", "correct": false },
+			{ "text": "f'(x) = 3x^2 + 5x - 7", "correct": false }
+		]
+	},
+	{
+		"question": "Evaluate Integral",
+		"equation": "∫ (2x + 3) dx",
+		"answers": [
+			{ "text": "x^2 + 3x + C", "correct": true },
+			{ "text": "2x^2 + 3x + C", "correct": false },
+			{ "text": "x^2 + 3", "correct": false },
+			{ "text": "x^2 + 3x", "correct": false }
+		]
+	},
+	{
+		"question": "Find Derivative",
+		"equation": "g(x) = e^{2x}",
+		"answers": [
+			{ "text": "g'(x) = 2e^{2x}", "correct": true },
+			{ "text": "g'(x) = e^{2x}", "correct": false },
+			{ "text": "g'(x) = 2x e^x", "correct": false },
+			{ "text": "g'(x) = 2e^x", "correct": false }
+		]
+	},
+	{
+		"question": "Evaluate Integral",
+		"equation": "∫ cos(x) dx",
+		"answers": [
+			{ "text": "sin(x) + C", "correct": true },
+			{ "text": "-sin(x) + C", "correct": false },
+			{ "text": "cos(x) + C", "correct": false },
+			{ "text": "tan(x) + C", "correct": false }
+		]
+	},
+	{
+		"question": "Find Derivative",
+		"equation": "h(x) = sin(x^2)",
+		"answers": [
+			{ "text": "h'(x) = 2x cos(x^2)", "correct": true },
+			{ "text": "h'(x) = cos(x^2)", "correct": false },
+			{ "text": "h'(x) = -2x cos(x^2)", "correct": false },
+			{ "text": "h'(x) = 2 sin(x) cos(x)", "correct": false }
+		]
+	},
+	{
+		"question": "Evaluate Integral",
+		"equation": "∫ (1/x) dx",
+		"answers": [
+			{ "text": "ln|x| + C", "correct": true },
+			{ "text": "1/(x^2) + C", "correct": false },
+			{ "text": "1 + C", "correct": false },
+			{ "text": "ln(x^2) + C", "correct": false }
+		]
+	},
+	{
+		"question": "Constant",
+		"equation": "d/{dx} (c)",
+		"answers": [
+			{ "text": "0", "correct": true },
+			{ "text": "c", "correct": false },
+			{ "text": "1", "correct": false },
+			{ "text": "x", "correct": false }
+		]
+	},
+	{
+		"question": "Power Rule",
+		"equation": "d/{dx} (x^n)",
+		"answers": [
+			{ "text": "n x^{n-1}", "correct": true },
+			{ "text": "x^n ln(x)", "correct": false },
+			{ "text": "(n-1) x^n", "correct": false },
+			{ "text": "n x^n", "correct": false }
+		]
+	},
+	{
+		"question": "Constant Multiple",
+		"equation": "d/{dx} (c f(x))",
+		"answers": [
+			{ "text": "c f'(x)", "correct": true },
+			{ "text": "c' f(x) + c f'(x)", "correct": false },
+			{ "text": "f'(x)", "correct": false },
+			{ "text": "0", "correct": false }
+		]
+	},
+	{
+		"question": "Sum Rule",
+		"equation": "d/{dx} (f(x) + g(x))",
+		"answers": [
+			{ "text": "f'(x) + g'(x)", "correct": true },
+			{ "text": "f'(x) g(x) + f(x) g'(x)", "correct": false },
+			{ "text": "f'(g(x)) g'(x)", "correct": false },
+			{ "text": "f'(x) - g'(x)", "correct": false }
+		]
+	},
+	{
+		"question": "Difference Rule",
+		"equation": "d/{dx} (f(x) - g(x))",
+		"answers": [
+			{ "text": "f'(x) - g'(x)", "correct": true },
+			{ "text": "f'(x) + g'(x)", "correct": false },
+			{ "text": "-f'(x) g'(x)", "correct": false },
+			{ "text": "f'(x) g(x) - f(x) g'(x)", "correct": false }
+		]
+	},
+	{
+		"question": "Derivative",
+		"equation": "d/{dx} (e^x)",
+		"answers": [
+			{ "text": "e^x", "correct": true },
+			{ "text": "x e^{x-1}", "correct": false },
+			{ "text": "ln(x)", "correct": false },
+			{ "text": "e^x ln(e)", "correct": false }
+		]
+	},
+	{
+		"question": "Derivative",
+		"equation": "d/{dx} (a^x)",
+		"answers": [
+			{ "text": "a^x ln(a)", "correct": true },
+			{ "text": "x a^{x-1}", "correct": false },
+			{ "text": "a^x", "correct": false },
+			{ "text": "ln(a)", "correct": false }
+		]
+	},
+	{
+		"question": "Derivative",
+		"equation": "d/{dx} (ln(x))",
+		"answers": [
+			{ "text": "1/x", "correct": true },
+			{ "text": "1/ln(x)", "correct": false },
+			{ "text": "e^x", "correct": false },
+			{ "text": "x ln(x) - x", "correct": false }
+		]
+	},
+	{
+		"question": "Derivative",
+		"equation": "d/{dx} (log_a(x))",
+		"answers": [
+			{ "text": "1 / (x ln(a))", "correct": true },
+			{ "text": "ln(a) / x", "correct": false },
+			{ "text": "a^x", "correct": false },
+			{ "text": "1/x", "correct": false }
+		]
+	},
+	{
+		"question": "Derivative",
+		"equation": "d/{dx} (sin(x))",
+		"answers": [
+			{ "text": "cos(x)", "correct": true },
+			{ "text": "-cos(x)", "correct": false },
+			{ "text": "sec^2(x)", "correct": false },
+			{ "text": "-sin(x)", "correct": false }
+		]
+	},
+	{
+		"question": "Derivative",
+		"equation": "d/{dx} (cos(x))",
+		"answers": [
+			{ "text": "-sin(x)", "correct": true },
+			{ "text": "sin(x)", "correct": false },
+			{ "text": "-cos(x)", "correct": false },
+			{ "text": "tan(x)", "correct": false }
+		]
+	},
+	{
+		"question": "Derivative",
+		"equation": "d/{dx} (tan(x))",
+		"answers": [
+			{ "text": "sec^2(x)", "correct": true },
+			{ "text": "cot(x)", "correct": false },
+			{ "text": "sec(x) tan(x)", "correct": false },
+			{ "text": "-csc^2(x)", "correct": false }
+		]
+	},
+	{
+		"question": "Derivative",
+		"equation": "d/{dx} (csc(x))",
+		"answers": [
+			{ "text": "-csc(x) cot(x)", "correct": true },
+			{ "text": "csc(x) tan(x)", "correct": false },
+			{ "text": "sec^2(x)", "correct": false },
+			{ "text": "-cot^2(x)", "correct": false }
+		]
+	},
+	{
+		"question": "Derivative",
+		"equation": "d/{dx} (sec(x))",
+		"answers": [
+			{ "text": "sec(x) tan(x)", "correct": true },
+			{ "text": "-sec(x) tan(x)", "correct": false },
+			{ "text": "tan^2(x)", "correct": false },
+			{ "text": "-csc(x) cot(x)", "correct": false }
+		]
+	},
+	{
+		"question": "Derivative",
+		"equation": "d/{dx} (cot(x))",
+		"answers": [
+			{ "text": "-csc^2(x)", "correct": true },
+			{ "text": "csc^2(x)", "correct": false },
+			{ "text": "-csc(x) cot(x)", "correct": false },
+			{ "text": "tan(x)", "correct": false }
+		]
+	},
+	{
+		"question": "Derivative",
+		"equation": "d/{dx} (arcsin(x))",
+		"answers": [
+			{ "text": "1 / (√(1 - x^2))", "correct": true },
+			{ "text": "-1 / (√(1 - x^2))", "correct": false },
+			{ "text": "1 / (1 + x^2)", "correct": false },
+			{ "text": "arccos(x)", "correct": false }
+		]
+	},
+	{
+		"question": "Derivative",
+		"equation": "d/{dx} (arccos(x))",
+		"answers": [
+			{ "text": "-1 / (√(1 - x^2))", "correct": true },
+			{ "text": "1 / (√(1 - x^2))", "correct": false },
+			{ "text": "-1 / (1 + x^2)", "correct": false },
+			{ "text": "-arcsin(x)", "correct": false }
+		]
+	},
+	{
+		"question": "Derivative",
+		"equation": "d/{dx} (arctan(x))",
+		"answers": [
+			{ "text": "1 / (1 + x^2)", "correct": true },
+			{ "text": "-1 / (1 + x^2)", "correct": false },
+			{ "text": "1 / (√(1 - x^2))", "correct": false },
+			{ "text": "sec^2(x)", "correct": false }
+		]
+	},
+	{
+		"question": "Product Rule",
+		"equation": "d/{dx} (f(x) g(x))",
+		"answers": [
+			{ "text": "f'(x)g(x) + f(x)g'(x)", "correct": true },
+			{ "text": "f'(x) g'(x)", "correct": false },
+			{ "text": "(f'(x)g(x) - f(x)g'(x)) / (g(x)^2)", "correct": false },
+			{ "text": "f'(x) + g'(x)", "correct": false }
+		]
+	},
+	{
+		"question": "Quotient Rule",
+		"equation": "d/{dx} (f(x) / g(x))",
+		"answers": [
+			{ "text": "(f'(x)g(x) - f(x)g'(x)) / (g(x)^2)", "correct": true },
+			{ "text": "f'(x) / g'(x)", "correct": false },
+			{ "text": "f'(x)g(x) + f(x)g'(x)", "correct": false },
+			{ "text": "(f(x)g'(x) - f'(x)g(x)) / (g(x)^2)", "correct": false }
+		]
+	},
+	{
+		"question": "Chain Rule",
+		"equation": "d/{dx} (f(g(x)))",
+		"answers": [
+			{ "text": "f'(g(x)) * g'(x)", "correct": true },
+			{ "text": "f'(x) * g'(x)", "correct": false },
+			{ "text": "f'(g'(x))", "correct": false },
+			{ "text": "f'(x) g(x) + f(x) g'(x)", "correct": false }
+		]
+	}
+]

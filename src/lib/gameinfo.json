@@ -1,0 +1,162 @@
+{
+	"constants": {
+		"xpPerLevel": 1000,
+		"playerBaseHealth": 5,
+		"playerHealthPerLevel": 5,
+		"playerBaseDamage": 1,
+		"playerDamagePerLevel": 1,
+		"playerDamageVariation": 0.2,
+		"enemyBaseXpReward": 100,
+		"enemyXpRewardPerLevel": 250,
+		"enemyBaseHitChance": 0.25,
+		"enemyMaxBonusHitChance": 0.55,
+		"enemyHitChanceXpThreshold": 20000,
+		"enemyDamageXpSlope": 750,
+		"enemyDamageVariation": 0.2
+	},
+	"worlds": [
+		{
+			"name": "Fields",
+			"image": "/assets/backgrounds/Fields.png",
+			"levels": [
+				{
+					"type": "battle",
+					"name": "Plumpling",
+					"xp": 1000,
+					"icon": "monsters/field/1",
+					"hp": 5
+				},
+				{
+					"type": "battle",
+					"name": "Red Rascal",
+					"xp": 3000,
+					"icon": "monsters/field/2",
+					"hp": 10
+				},
+				{
+					"type": "battle",
+					"name": "Cinnabub",
+					"xp": 1000,
+					"icon": "monsters/field/5",
+					"hp": 30
+				},
+				{
+					"type": "boss",
+					"name": "Antliar",
+					"xp": 5000,
+					"icon": "monsters/field/4",
+					"hp": 25
+				}
+			]
+		},
+		{
+			"name": "Wasteland",
+			"image": "/assets/backgrounds/Desolate.png",
+			"levels": [
+				{
+					"type": "battle",
+					"name": "Grab Goblin",
+					"xp": 5000,
+					"icon": "monsters/cave/1",
+					"hp": 30
+				},
+				{
+					"type": "battle",
+					"name": "Mushrant",
+					"xp": 20000,
+					"icon": "monsters/cave/2",
+					"hp": 25
+				},
+				{
+					"type": "battle",
+					"name": "Mushrump",
+					"xp": 10000,
+					"icon": "monsters/cave/4",
+					"hp": 100
+				},
+				{
+					"type": "boss",
+					"name": "Grand Goblin",
+					"xp": 25000,
+					"icon": "monsters/cave/5",
+					"hp": 100
+				}
+			]
+		},
+		{
+			"name": "Swamps",
+			"image": "/assets/backgrounds/Bog.png",
+			"levels": [
+				{
+					"type": "battle",
+					"name": "Gungor",
+					"xp": 1000,
+					"icon": "monsters/field/6",
+					"hp": 1
+				},
+				{
+					"type": "battle",
+					"name": "Scorecerer",
+					"xp": 25000,
+					"icon": "monsters/field/7",
+					"hp": 100
+				},
+				{
+					"type": "battle",
+					"name": "Blindatt",
+					"xp": 30000,
+					"icon": "monsters/cave/3",
+					"hp": 100
+				},
+				{
+					"type": "boss",
+					"name": "Jerry",
+					"xp": 50000,
+					"icon": "monsters/hell/4",
+					"hp": 250
+				}
+			]
+		},
+		{
+			"name": "Hell",
+			"image": "/assets/backgrounds/Lava.png",
+			"levels": [
+				{
+					"type": "battle",
+					"name": "Skelott",
+					"xp": 40000,
+					"icon": "monsters/hell/2",
+					"hp": 200
+				},
+				{
+					"type": "battle",
+					"name": "Buffy",
+					"xp": 25000,
+					"icon": "monsters/hell/1",
+					"hp": 500
+				},
+				{
+					"type": "battle",
+					"name": "Butlair",
+					"xp": 50000,
+					"icon": "monsters/hell/3",
+					"hp": 300
+				},
+				{
+					"type": "battle",
+					"name": "Secrettary",
+					"xp": 60000,
+					"icon": "monsters/boss/8",
+					"hp": 300
+				},
+				{
+					"type": "boss",
+					"name": "Satan",
+					"xp": 100000,
+					"icon": "monsters/boss/7",
+					"hp": 1000
+				}
+			]
+		}
+	]
+}
