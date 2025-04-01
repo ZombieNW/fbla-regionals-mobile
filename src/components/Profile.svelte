@@ -9,13 +9,15 @@
 	let playerLevelsComplete;
 	let xpBarDisplayPercentage = 0;
 
-	let times = [55, 48, 29, 8, 0, 0, 0];
+	let times = [0, 0, 0, 0, 0, 0, 0];
 
 	onMount(async () => {
 		playerXp = await GameStorage.getXP();
 		playerLevel = GameUtils.getPlayerLevel(playerXp);
 
 		playerLevelsComplete = await GameStorage.getLevel();
+
+		times = [12, 58, 69, playerLevelsComplete, 0, 0, 0];
 	});
 
 	$: xpBarDisplayPercentage =
@@ -52,23 +54,18 @@
 		<span class="text-gray-300">Level{playerLevelsComplete == 1 ? '' : 's'} Completed</span>
 	</p>
 	<div class="my-4 w-full">
-		<h1 class="mb-4 text-2xl font-bold">Activity this week</h1>
+		<h1 class="mb-4 text-2xl font-bold">Levels this week</h1>
 		<div class="flex h-48 justify-between">
 			{#each ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'] as day, i}
 				<div class="flex flex-col-reverse items-center">
 					<span class="mt-2 text-gray-500">{day}</span>
 					<div
 						class="w-8 rounded-t-xl bg-emerald-600 outline-2 outline-gray-950"
-						style="height: {times[i]}%"
+						style="height: {(times[i] / times.reduce((a, b) => a + b)) * 100}%"
 						aria-label="{day} activity"
 					></div>
 					<span class="text-center text-gray-500">
-						{#if times[i] > 60}
-							{Math.floor(times[i] / 60)}h <br />
-						{/if}
-						{#if times[i] > 0}
-							{times[i] % 60}m
-						{/if}
+						{times[i]}
 					</span>
 				</div>
 			{/each}

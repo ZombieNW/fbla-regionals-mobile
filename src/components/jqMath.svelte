@@ -26,8 +26,14 @@
 	}
 </script>
 
-<div bind:this={container} class="font-bold">
+<div bind:this={container} class="font-bold tracking-widest">
 	{#if tex !== ''}
 		{@html `$${tex}$`}
 	{/if}
 </div>
+
+<style>
+	:global(math) {
+		letter-spacing: 0.05rem;
+	}
+</style>

@@ -1,5 +1,6 @@
 <script>
 	import { page } from '$app/stores';
+	import { Share } from '@capacitor/share';
 	import { onMount, tick } from 'svelte';
 	import StateMachine from '$lib/stateMachine';
 
@@ -198,6 +199,8 @@
 				let xpReward = GameUtils.calculateXpReward(playerObject.xp, enemyObject.xp);
 				await GameStorage.addXP(xpReward);
 
+				await GameStorage.addLevelsPlayedToday(1);
+
 				//Progress Level if current level
 				if (
 					GameUtils.isCurrentLevel(await GameStorage.getLevel(), worldListIndex, Number(enemyId))
@@ -229,6 +232,18 @@
 
 	function isGameOver() {
 		return GameState.state === 'gameLose' || GameState.state === 'gameWin';
+	}
+
+	async function shareSocialMedia() {
+		let shareText = 'I just won a game of CalcBattles!';
+		let levelsPlayedToday = await GameStorage.getLevelsPlayedToday();
+		let totalXP = await GameStorage.getXP();
+		shareText += `\n\nI've played ${levelsPlayedToday} levels today and have ${totalXP} total XP!`;
+		await Share.share({
+			title: 'CalcBattles!',
+			text: shareText,
+			dialogTitle: 'Brag to your friends!'
+		});
 	}
 
 	// Handles button styling (WARNING: Runs a LOT of times, do not put logic in here)
@@ -386,11 +401,11 @@
 					<img src="/assets/{enemyObject.icon}.png" alt={enemyObject.name} class="h-20" />
 					{#if enemyObject.attack}
 						{#if enemyObject.attack == 'miss'}
-							<h1 class="mt-5 text-center text-2xl font-bold text-rose-400">
+							<h1 class="mt-5 text-center text-2xl font-bold text-rose-600">
 								{enemyObject.name} is incorrect!
 							</h1>
 						{:else}
-							<h1 class="mt-5 text-center text-2xl font-bold text-emerald-400">
+							<h1 class="mt-5 text-center text-2xl font-bold text-emerald-600">
 								{enemyObject.name} is correct! <br />
 								<span class="text-rose-400">Player takes {enemyObject.attack} damage</span>
 							</h1>
@@ -428,6 +443,12 @@
 					<a href="/levels" class="cb-outline my-4 w-full rounded-xl p-4 text-center">
 						<h1 class="mx-auto text-2xl">Return</h1>
 					</a>
+					<button
+						onclick={shareSocialMedia}
+						class="cb-outline my-4 w-full rounded-xl p-4 text-center"
+					>
+						<h1 class="mx-auto text-2xl">Share</h1>
+					</button>
 				</div>
 			{:else}
 				<h1 class="text-4xl font-bold">Loading...</h1>

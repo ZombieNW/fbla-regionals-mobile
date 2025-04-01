@@ -6,7 +6,7 @@
 			{ "text": "(x-3)(x+3)", "correct": true },
 			{ "text": "(x-9)(x+1)", "correct": false },
 			{ "text": "(x-3)^2", "correct": false },
-			{ "text": "Cannot be factored", "correct": false }
+			{ "text": "\\text N\\/A", "correct": false }
 		]
 	},
 	{
@@ -33,9 +33,9 @@
 		"question": "Find Derivative",
 		"equation": "f(x) = arctan(x)",
 		"answers": [
-			{ "text": "f'(x) = 1 / (1 + x^2)", "correct": true },
-			{ "text": "f'(x) = 1 / (√(1 - x^2))", "correct": false },
-			{ "text": "f'(x) = -1 / (1 + x^2)", "correct": false },
+			{ "text": "f'(x) = 1 / {1 + x^2}", "correct": true },
+			{ "text": "f'(x) = 1 / {√{1 - x^2}}", "correct": false },
+			{ "text": "f'(x) = -1 / {1 + x^2}", "correct": false },
 			{ "text": "f'(x) = sec^2(x)", "correct": false }
 		]
 	},
@@ -54,8 +54,8 @@
 		"equation": "sin(π/6)",
 		"answers": [
 			{ "text": "1/2", "correct": true },
-			{ "text": "(√3)/2", "correct": false },
-			{ "text": "(√2)/2", "correct": false },
+			{ "text": "{√3}/2", "correct": false },
+			{ "text": "{√2}/2", "correct": false },
 			{ "text": "1", "correct": false }
 		]
 	},
@@ -86,7 +86,7 @@
 			{ "text": "1", "correct": true },
 			{ "text": "0", "correct": false },
 			{ "text": "√3", "correct": false },
-			{ "text": "Undefined", "correct": false }
+			{ "text": "\\text Undefined", "correct": false }
 		]
 	},
 	{
@@ -126,7 +126,7 @@
 			{ "text": "(1/5)e^{5x} + C", "correct": true },
 			{ "text": "5e^{5x} + C", "correct": false },
 			{ "text": "e^{5x} + C", "correct": false },
-			{ "text": "(e^{5x+1}) / (5x+1) + C", "correct": false }
+			{ "text": "{e^(5x+1)} / {5x+1} + C", "correct": false }
 		]
 	},
 	{
@@ -143,8 +143,8 @@
 		"question": "Evaluate Integral",
 		"equation": "∫ sin(2x) dx",
 		"answers": [
-			{ "text": "-(1/2)cos(2x) + C", "correct": true },
-			{ "text": "(1/2)cos(2x) + C", "correct": false },
+			{ "text": "-{1/2}cos(2x) + C", "correct": true },
+			{ "text": "{1/2}cos(2x) + C", "correct": false },
 			{ "text": "-2cos(2x) + C", "correct": false },
 			{ "text": "-cos(2x) + C", "correct": false }
 		]
@@ -201,10 +201,10 @@
 	},
 	{
 		"question": "Evaluate Integral",
-		"equation": "∫ (1/x) dx",
+		"equation": "∫ {1/x} dx",
 		"answers": [
 			{ "text": "ln|x| + C", "correct": true },
-			{ "text": "1/(x^2) + C", "correct": false },
+			{ "text": "1/{x^2} + C", "correct": false },
 			{ "text": "1 + C", "correct": false },
 			{ "text": "ln(x^2) + C", "correct": false }
 		]
@@ -293,8 +293,8 @@
 		"question": "Derivative",
 		"equation": "d/{dx} (log_a(x))",
 		"answers": [
-			{ "text": "1 / (x ln(a))", "correct": true },
-			{ "text": "ln(a) / x", "correct": false },
+			{ "text": "1 / {x ln(a)}", "correct": true },
+			{ "text": "{ln(a)} / x", "correct": false },
 			{ "text": "a^x", "correct": false },
 			{ "text": "1/x", "correct": false }
 		]
@@ -363,9 +363,9 @@
 		"question": "Derivative",
 		"equation": "d/{dx} (arcsin(x))",
 		"answers": [
-			{ "text": "1 / (√(1 - x^2))", "correct": true },
-			{ "text": "-1 / (√(1 - x^2))", "correct": false },
-			{ "text": "1 / (1 + x^2)", "correct": false },
+			{ "text": "1 / {√{1 - x^2}}", "correct": true },
+			{ "text": "-1 / {√{1 - x^2}}", "correct": false },
+			{ "text": "1 / {1 + x^2}", "correct": false },
 			{ "text": "arccos(x)", "correct": false }
 		]
 	},
@@ -373,9 +373,9 @@
 		"question": "Derivative",
 		"equation": "d/{dx} (arccos(x))",
 		"answers": [
-			{ "text": "-1 / (√(1 - x^2))", "correct": true },
-			{ "text": "1 / (√(1 - x^2))", "correct": false },
-			{ "text": "-1 / (1 + x^2)", "correct": false },
+			{ "text": "-1 / {√{1 - x^2}}", "correct": true },
+			{ "text": "1 / {√{1 - x^2}}", "correct": false },
+			{ "text": "-1 / {1 + x^2}", "correct": false },
 			{ "text": "-arcsin(x)", "correct": false }
 		]
 	},
@@ -383,9 +383,9 @@
 		"question": "Derivative",
 		"equation": "d/{dx} (arctan(x))",
 		"answers": [
-			{ "text": "1 / (1 + x^2)", "correct": true },
-			{ "text": "-1 / (1 + x^2)", "correct": false },
-			{ "text": "1 / (√(1 - x^2))", "correct": false },
+			{ "text": "1 / {1 + x^2}", "correct": true },
+			{ "text": "-1 / {1 + x^2}", "correct": false },
+			{ "text": "1 / {√{1 - x^2}}", "correct": false },
 			{ "text": "sec^2(x)", "correct": false }
 		]
 	},
@@ -395,18 +395,18 @@
 		"answers": [
 			{ "text": "f'(x)g(x) + f(x)g'(x)", "correct": true },
 			{ "text": "f'(x) g'(x)", "correct": false },
-			{ "text": "(f'(x)g(x) - f(x)g'(x)) / (g(x)^2)", "correct": false },
+			{ "text": "{f'(x)g(x) - f(x)g'(x)} / {g(x)^2}", "correct": false },
 			{ "text": "f'(x) + g'(x)", "correct": false }
 		]
 	},
 	{
 		"question": "Quotient Rule",
-		"equation": "d/{dx} (f(x) / g(x))",
+		"equation": "d/{dx} ({f(x)} / {g(x)})",
 		"answers": [
-			{ "text": "(f'(x)g(x) - f(x)g'(x)) / (g(x)^2)", "correct": true },
-			{ "text": "f'(x) / g'(x)", "correct": false },
+			{ "text": "{f'(x)g(x) - f(x)g'(x)} / {g(x)^2}", "correct": true },
+			{ "text": "{f'(x)} / {g'(x)}", "correct": false },
 			{ "text": "f'(x)g(x) + f(x)g'(x)", "correct": false },
-			{ "text": "(f(x)g'(x) - f'(x)g(x)) / (g(x)^2)", "correct": false }
+			{ "text": "{f(x)g'(x) - f'(x)g(x)} / {g(x)^2}", "correct": false }
 		]
 	},
 	{

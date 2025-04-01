@@ -72,12 +72,12 @@
 					"name": "Mushrump",
 					"xp": 10000,
 					"icon": "monsters/cave/4",
-					"hp": 100
+					"hp": 200
 				},
 				{
 					"type": "boss",
 					"name": "Grand Goblin",
-					"xp": 25000,
+					"xp": 30000,
 					"icon": "monsters/cave/5",
 					"hp": 100
 				}
@@ -97,21 +97,21 @@
 				{
 					"type": "battle",
 					"name": "Scorecerer",
-					"xp": 25000,
+					"xp": 35000,
 					"icon": "monsters/field/7",
-					"hp": 100
+					"hp": 150
 				},
 				{
 					"type": "battle",
 					"name": "Blindatt",
-					"xp": 30000,
+					"xp": 40000,
 					"icon": "monsters/cave/3",
 					"hp": 100
 				},
 				{
 					"type": "boss",
 					"name": "Jerry",
-					"xp": 50000,
+					"xp": 60000,
 					"icon": "monsters/hell/4",
 					"hp": 250
 				}
@@ -124,30 +124,30 @@
 				{
 					"type": "battle",
 					"name": "Skelott",
-					"xp": 40000,
+					"xp": 60000,
 					"icon": "monsters/hell/2",
-					"hp": 200
+					"hp": 300
 				},
 				{
 					"type": "battle",
 					"name": "Buffy",
-					"xp": 25000,
+					"xp": 30000,
 					"icon": "monsters/hell/1",
 					"hp": 500
 				},
 				{
 					"type": "battle",
 					"name": "Butlair",
-					"xp": 50000,
+					"xp": 60000,
 					"icon": "monsters/hell/3",
-					"hp": 300
+					"hp": 400
 				},
 				{
 					"type": "battle",
 					"name": "Secrettary",
-					"xp": 60000,
+					"xp": 75000,
 					"icon": "monsters/boss/8",
-					"hp": 300
+					"hp": 500
 				},
 				{
 					"type": "boss",

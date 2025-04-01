@@ -2,16 +2,35 @@ import { Preferences } from '@capacitor/preferences';
 
 let xp = 0;
 let level = 1;
+let levelsPlayedToday = 0;
 
 export async function init() {
 	const retXp = await Preferences.get({ key: 'xp' });
 	const retLevel = await Preferences.get({ key: 'level' });
+	const retLevelsPlayedToday = await Preferences.get({ key: 'levelsPlayedToday' });
 	if (retXp.value) {
 		xp = Number(retXp.value);
 	}
 	if (retLevel.value) {
 		level = Number(retLevel.value);
 	}
+	if (retLevelsPlayedToday.value) {
+		levelsPlayedToday = Number(retLevelsPlayedToday.value);
+	}
+}
+
+export async function setLevelsPlayedToday(newLevelsPlayedToday) {
+	levelsPlayedToday = newLevelsPlayedToday;
+	await Preferences.set({ key: 'levelsPlayedToday', value: levelsPlayedToday.toString() });
+}
+
+export async function getLevelsPlayedToday() {
+	return levelsPlayedToday;
+}
+
+export async function addLevelsPlayedToday(amount) {
+	levelsPlayedToday += amount;
+	await setLevelsPlayedToday(levelsPlayedToday);
 }
 
 // Set functions
